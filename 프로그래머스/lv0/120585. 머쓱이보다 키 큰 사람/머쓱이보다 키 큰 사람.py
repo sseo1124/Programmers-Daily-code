@@ -1,7 +1,6 @@
 def solution(array, height):
-    lst = []
+    count = 0
     for h in array:
         if h > height:
-            lst.append(h)
-    answer = len(lst)
-    return answer
+            count += 1
+    return count
