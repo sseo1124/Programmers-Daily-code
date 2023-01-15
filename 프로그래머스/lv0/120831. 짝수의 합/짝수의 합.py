@@ -1,8 +1,5 @@
 def solution(n):
-    lst = []
-    for even in range(n+1):
-        if even % 2 == 0:
-            lst.append(even)
-    total =sum(lst)
+    lst = [i for i in range(2, n+1, 2)]
+    summation = sum(lst)
             
-    return total
+    return summation
