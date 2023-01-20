@@ -1,6 +1,3 @@
 def solution(n):
-    n = str(n)
-    sum = 0
-    for i in n:
-        sum += int(i)
-    return sum
+    sum_1 = sum([int(i) for i in str(n)])
+    return sum_1
