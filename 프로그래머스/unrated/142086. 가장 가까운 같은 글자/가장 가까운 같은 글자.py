@@ -1,15 +1,15 @@
 
 def solution(s):
     word = str()
-    lst = []
+    ls = []
     for idx, char in enumerate(s):
         if char not in word:
-            lst.append(-1)
+            ls.append(-1)
             word += char
         elif char in word:
-            lst.append(idx - word.index(char))
+            ls.append(idx - word.index(char))
             word = word.replace(char, ' ')
             word += char
 
-    answer =lst
+    answer =ls
     return answer
