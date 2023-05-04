@@ -1,9 +1,11 @@
-def solution(absolutes, signs):
-    summ = 0
-    for i in range(len(absolutes)):
-        if signs[i] == False:
-            summ += (-1*absolutes[i])
+def solution(absolutes, sign):
+    sum = 0
+    for num, char in zip(absolutes, sign):
+        if char:
+            num = num
         else:
-            summ += absolutes[i]
-    
-    return summ
+            num = - num 
+        sum += num
+
+    answer = sum
+    return answer
